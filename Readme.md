@@ -1,5 +1,5 @@
 
-### 🔐 Authentication System Documentation
+### 🔐 SecureAuth Documentation
 
 This document outlines a robust, secure authentication system designed to protect against a wide range of modern web threats. It leverages **passwordless authentication** as the primary method while providing secure fallbacks.
 
