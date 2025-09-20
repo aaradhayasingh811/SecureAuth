@@ -1,0 +1,27 @@
+{
+  "name": "strong-auth-postgres",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon --watch src --exec node src/server.js",
+    "start": "node src/server.js",
+    "migrate": "powershell -Command \"$env:PGUSER='postgres'; $env:PGPASSWORD='root'; & 'C:\\Program Files\\PostgreSQL\\15\\bin\\psql.exe' -d authenticator_db -f migrations/init.sql\""
+  },
+  "dependencies": {
+    "@simplewebauthn/server": "^13.2.1",
+    "argon2": "^0.30.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "otplib": "^12.0.1",
+    "pg": "^8.10.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
